@@ -5,6 +5,7 @@ import { ScrollView, SafeAreaView } from 'react-native';
 import Card from './components/Card';
 import Logo from './components/Logo';
 import Course from './components/Course';
+import Menu from './components/Menu';
 
 const Container = styled.View`
 	background: #f0f3f5;
@@ -190,6 +191,7 @@ export default function App() {
 							caption={course.caption}
 						/>
 					))}
+					<Menu />
 				</ScrollView>
 			</SafeAreaView>
 		</Container>
